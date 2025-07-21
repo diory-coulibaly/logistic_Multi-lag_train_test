@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: logistic_lag_streamlit_train_test
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run logistic_lag_streamlit_train_test.py --server.port 8080 --server.enableCORS false
