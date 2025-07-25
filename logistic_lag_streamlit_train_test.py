@@ -12,6 +12,10 @@ from sklearn.metrics import (
 from sklearn.model_selection import train_test_split
 
 st.title("📈 Predict GOOG Direction with Lagged Features allows training/test split")
+# 📷 Quick preview of expected CSV format
+from PIL import Image
+image = Image.open("Goog.JPG")
+st.image(image, caption="CSV Format: Stocks, SP500", use_container_width=True, output_format="JPEG")
 
 st.sidebar.header("1. Upload Files")
 goog_file = st.sidebar.file_uploader("GOOG CSV (semicolon-separated)", type="csv")
